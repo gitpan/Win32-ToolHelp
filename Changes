@@ -1,0 +1,13 @@
+Revision history for Perl extension ToolHelp.
+
+0.1		Fri Jul  5 19:35:15 2002
+	* original version; created by h2xs 1.21 with options
+		-O -n ToolHelp Win32/ToolHelp/Impl/Impl.h
+	+ PROCESSENTRY32* GetProcesses()
+	+ MODULEENTRY32* GetProcessModules(pid)
+	+ PROCESSENTRY32 GetProcess(pid)
+	+ MODULEENTRY32 GetProcessModule(pid, mid)
+	+ MODULEENTRY32 GetProcessMainModule(pid)
+	+ PROCESSENTRY32 SearchProcess(pname)
+	+ MODULEENTRY32 SearchProcessModule(pid, mname)
+	+ MODULEENTRY32 SearchProcessMainModule(pname)
