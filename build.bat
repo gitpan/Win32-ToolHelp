@@ -16,5 +16,5 @@ echo     ppm install Win32-ToolHelp.ppd>>package\README
 echo.>>package\README
 copy Win32-ToolHelp.ppd package
 cd package
-call zip -r -9 -S ..\Win32-ToolHelp-0.1-mswin32-x86.zip *
+call zip -r -9 -S ..\Win32-ToolHelp-0.2-mswin32-x86.zip *
 cd ..

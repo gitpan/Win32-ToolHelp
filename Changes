@@ -1,5 +1,10 @@
 Revision history for Perl extension ToolHelp.
 
+0.2		Mon Jul  15 11:08:15 2002
+	! quotation marks were cut from the XS_VERSION passed to the compiler
+	  via -DXS_VERSION=\"0.1\" (XS_VERSION redefined in ToolHelp.xs as I
+	  hadn't found quickly the reason)
+
 0.1		Fri Jul  5 19:35:15 2002
 	* original version; created by h2xs 1.21 with options
 		-O -n ToolHelp Win32/ToolHelp/Impl/Impl.h

@@ -1,4 +1,4 @@
-#define WIN32_TOOLHELP_IMPL_VER 0.1
+#define WIN32_TOOLHELP_IMPL_VER 0.2
 
 
 #define MAX_PATH 260
