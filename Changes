@@ -1,5 +1,9 @@
 Revision history for Perl extension ToolHelp.
 
+0.31    Sat Mar  28 22:30:30 2009
+	No changes; just trying to get a tarball that is acceptable to the CPAN
+	indexer...
+	
 0.3	    Sat Mar  28 21:35:06 2009
 	This version uploaded by knth@cpan.org. Steffen Mueller has graciously
 	made me co-maintainer for the moment as the real maintainer is currently
