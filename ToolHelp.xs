@@ -5,7 +5,7 @@
 #include "Impl/Impl.h"
 
 #undef XS_VERSION
-#define XS_VERSION "0.2"
+#define XS_VERSION "0.3"
 
 static int
 not_here(char *s)

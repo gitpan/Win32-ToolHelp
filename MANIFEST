@@ -14,3 +14,4 @@ ToolHelp.html
 ToolHelp.pm
 ToolHelp.xs
 Win32-ToolHelp.ppd
+META.yml                                 Module meta-data (added by MakeMaker)

@@ -1,5 +1,7 @@
 use ExtUtils::MakeMaker;
 
+use Config;
+
 $Verbose = 1;
 
 WriteMakefile(
@@ -9,11 +11,18 @@ WriteMakefile(
 );
 
 sub MY::top_targets {
-'
+
+# when using MinGW (gcc) to build, it uses the 'ar'
+# command instead of 'lib' and then the option
+# style needs to change
+#
+$opt = $Config{ar} eq 'ar' ? '-ru ' : '/out:';
+
+"
 all :: static
 pure_all :: static
-static :: Impl$(LIB_EXT)
-Impl$(LIB_EXT): $(O_FILES)
-	$(AR) /out:Impl$(LIB_EXT) $(O_FILES)
-';
+static :: Impl\$(LIB_EXT)
+Impl\$(LIB_EXT): \$(O_FILES)
+  \$(AR) ${opt}Impl\$(LIB_EXT) \$(O_FILES)
+";
 }

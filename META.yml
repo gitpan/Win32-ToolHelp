@@ -1,0 +1,13 @@
+--- #YAML:1.0
+name:                Win32-ToolHelp
+version:             0.3
+abstract:            Perl extension for obtaining information about currently
+license:             ~
+author:              
+    - Ferdinand Prantl <prantl@host.sk>
+generated_by:        ExtUtils::MakeMaker version 6.42_01
+distribution_type:   module
+requires:     
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
