@@ -1,5 +1,19 @@
 Revision history for Perl extension ToolHelp.
 
+0.32    Thu Oct 29 12:35:00 2009
+	Failed to get this to work with ActivePerl 5.10.1 1006 and 'nmake'.
+	For mysterious reasons my nmake says it does the compile for Impl.c
+	but no .o file is produced. My nmake is 6.00.9782.0, will investigate
+	to see if other versions work. Adapt to use dmake as an alternative.
+	
+	* Changed the command for creating the archive to use a tab instead of
+	spaces since dmake won't recognize it otherwise.
+	* Also adapted to the fact that Config{ar} no longer contained just 'ar',
+	but a full path.
+	* Added specific tarflags for the dist target since (at least my) tar puts
+	some very stupid modes on the files (specifically, no x for directories)
+	which creates problems when uploading to PAUSE.
+	
 0.31    Sat Mar  28 22:30:30 2009
 	No changes; just trying to get a tarball that is acceptable to the CPAN
 	indexer...

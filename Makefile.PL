@@ -12,6 +12,7 @@ WriteMakefile(
 	'INC'			=> '',		# e.g., '-I/usr/include/other'
 	#'OBJECT'		=> '$(O_FILES)',		# link all the C files too
 	'MYEXTLIB'		=> 'Impl/Impl$(LIB_EXT)',
+	dist			=> {TARFLAGS => '--mode=755 -c -v -f'},
 );
 
 sub MY::postamble {

@@ -16,13 +16,13 @@ sub MY::top_targets {
 # command instead of 'lib' and then the option
 # style needs to change
 #
-$opt = $Config{ar} eq 'ar' ? '-ru ' : '/out:';
+$opt = $Config{ar} =~ /ar\.exe$/ ? '-ru ' : '/out:';
 
 "
 all :: static
 pure_all :: static
 static :: Impl\$(LIB_EXT)
 Impl\$(LIB_EXT): \$(O_FILES)
-  \$(AR) ${opt}Impl\$(LIB_EXT) \$(O_FILES)
+	\$(AR) ${opt}Impl\$(LIB_EXT) \$(O_FILES)
 ";
 }
